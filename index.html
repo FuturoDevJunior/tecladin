@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Acordes e Cifras para Iniciantes no Teclado</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body {font-family: Arial,sans-serif; margin:0; color:#333;}
+    .btn {background:#E91E63; color:#fff; padding:15px 30px; text-decoration:none; border-radius:5px;}
+    section {padding:60px 20px;}
+    .text-center{text-align:center;}
+    .bg-gray{background:#f7f7f7;}
+    .hero img{max-width:300px; margin-top:20px;}
+    .twocol {display:flex; flex-wrap:wrap; gap:40px;}
+    .column{flex:1; min-width:280px;}
+    blockquote{font-style:italic; color:#555; border-left:4px solid #E91E63; padding-left:16px; margin:20px 0;}
+    .testimonial{background:#fff; padding:20px; border:1px solid #eee; border-radius:8px; margin-bottom:20px;}
+  </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero bg-gray text-center">
+  <h1 style="font-size:2.5em; margin-bottom:10px;">Toque Suas Músicas Favoritas em Menos de 7 Dias</h1>
+  <p style="font-size:1.2em; margin-bottom:20px;">Guia completo de acordes & cifras para iniciantes no teclado — evolua desde o primeiro acorde</p>
+  <a href="#compra" class="btn">Quero Aprender Agora</a>
+  <img src="IMAGE_PLACEHOLDER_capa" alt="Capa do eBook" class="hero-image"/>
+</section>
+
+<!-- Proposta de valor -->
+<section class="text-center">
+  <h2>O que você vai conquistar:</h2>
+  <ul style="list-style:none; padding:0; font-size:1.1em;">
+    <li>🎹 Aprenda os 12 acordes principais com clareza</li>
+    <li>📚 Explicações passo a passo, sem complicação</li>
+    <li>📥 Material PDF + partituras inclusas</li>
+    <li>🤝 Comunidade exclusiva para tirar dúvidas</li>
+  </ul>
+</section>
+
+<!-- Benefícios com colunas -->
+<section>
+  <div class="twocol">
+    <div class="column">
+      <h3>🔥 Aprenda Rápido</h3>
+      <p>Cada lição leva menos de 15 minutos — ideal para sua rotina.</p>
+    </div>
+    <div class="column">
+      <h3>📈 Evolução Visível</h3>
+      <p>No final da semana já consegue tocar 3 músicas completas.</p>
+    </div>
+    <div class="column">
+      <h3>🐥 Iniciante Zero</h3>
+      <p>Não exige leitura de partitura nem experiência prévia.</p>
+    </div>
+    <div class="column">
+      <h3>💻 Acesso Imediato</h3>
+      <p>Seu material em PDF disponível imediatamente após a compra.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Prova social -->
+<section class="bg-gray text-center">
+  <h2>Veja o que dizem alunos iniciantes:</h2>
+  <div class="testimonial">
+    <blockquote>
+      “Consegui tocar ‘Imagine’ em apenas 5 dias!” — João S., BH
+    </blockquote>
+  </div>
+  <div class="testimonial">
+    <blockquote>
+      “Nunca imaginei aprender tão rápido — material incrível!” — Maria F., SP
+    </blockquote>
+  </div>
+  <p><strong>+1.500 alunos iniciantes já transformaram seu estudo.</strong></p>
+</section>
+
+<!-- Descrição do produto -->
+<section>
+  <h2>O que está incluído no PDF:</h2>
+  <ul style="list-style:none; padding:0;">
+    <li><strong>Lição 1:</strong> Teclado, postura e primeiros acordes</li>
+    <li><strong>Lição 2–4:</strong> Acordes maiores e menores</li>
+    <li><strong>Lição 5–7:</strong> Progressões fáceis + cifras explicadas</li>
+    <li><strong>Bônus:</strong> 10 músicas populares com cifras simplificadas</li>
+  </ul>
+</section>
+
+<!-- Garantia -->
+<section class="text-center bg-gray">
+  <h2>Garantia Incondicional de 30 Dias</h2>
+  <p>Se você não aprender a tocar com confiança, devolvemos seu investimento.</p>
+</section>
+
+<!-- Urgência e escassez -->
+<section class="text-center">
+  <h2>Oferta por tempo limitado!</h2>
+  <p><strong>Apenas 50 vagas promocionais — bônus extra para quem agir agora!</strong></p>
+  <p id="timer" style="font-size:1.5em; color:#E91E63;">00:00:00</p>
+</section>
+
+<!-- Compra -->
+<section id="compra" class="text-center bg-gray">
+  <h2>Garanta seu acesso agora</h2>
+  <p style="font-size:1.4em;"><strong>de R$197 → R$97 à vista ou até 3x sem juros</strong></p>
+  <a href="#" class="btn" style="font-size:1.2em;">Sim! Quero aprender agora</a>
+</section>
+
+<!-- Footer -->
+<footer class="text-center" style="padding:20px 0; background:#333; color:#fff">
+  <p><a href="#" style="color:#fff;">Política de Privacidade</a> | <a href="#" style="color:#fff;">Termos de Uso</a></p>
+  <p>E-mail para contato: suporte@seudominio.com</p>
+</footer>
+
+<script>
+  // simples timer de oferta (2h)
+  let total = 7200;
+  function tick(){
+    if(total>0){
+      total--;
+      let h=Math.floor(total/3600), m=Math.floor(total%3600/60), s=total%60;
+      document.getElementById('timer').textContent=
+        (h<10?'0':'')+h+':'+(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+    }
+  }
+  setInterval(tick,1000);
+</script>
